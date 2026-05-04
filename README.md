@@ -34,3 +34,44 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+```
+naw3ya-app
+├─ AGENTS.md
+├─ CLAUDE.md
+├─ jsconfig.json
+├─ next.config.mjs
+├─ package-lock.json
+├─ package.json
+├─ postcss.config.mjs
+├─ public
+│  ├─ file.svg
+│  ├─ globe.svg
+│  ├─ next.svg
+│  ├─ vercel.svg
+│  └─ window.svg
+├─ README.md
+└─ src
+   └─ app
+      ├─ about
+      │  └─ page.jsx
+      ├─ exam
+      │  └─ page.jsx
+      ├─ favicon.ico
+      ├─ globals.css
+      ├─ layout.js
+      ├─ page.js
+      └─ Unit4
+         ├─ Lesson1
+         │  └─ page.jsx
+         ├─ Lesson2
+         │  └─ page.jsx
+         ├─ Lesson3
+         │  └─ page.jsx
+         ├─ Lesson4
+         │  └─ page.jsx
+         ├─ Lesson5
+         │  └─ page.jsx
+         └─ page.jsx
+
+```

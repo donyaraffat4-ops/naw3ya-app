@@ -1,65 +1,64 @@
-import Image from "next/image";
+"use client";
+import Link from "next/link";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="relative min-h-[80vh] flex flex-col items-center justify-center overflow-hidden">
+      
+      {/* 🌌 الخلفية السينمائية (مثل الصورة) */}
+      <div className="fixed inset-0 z-0 bg-[#3c2218]">
+        {/* توهج برتقالي كبير في النصف السفلي */}
+        <div className="absolute bottom-[-10%] left-1/2 -translate-x-1/2 w-full max-w-5xl h-125 bg-orange-900/20 rounded-full blur-[120px]"></div>
+        {/* إضاءة "نيون" ناعمة خلف النصوص */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-75 h-75 bg-amber-600/10 rounded-full blur-[100px]"></div>
+      </div>
+
+      <section className="relative z-10 text-center px-6 w-full max-w-5xl">
+        
+        {/* العنوان الكبير بتأثير الإضاءة */}
+   <h1 className="text-7xl md:text-[3rem] font-black leading-none mb-10">
+  {/* السطر الأول: نص الترحيب بحجم أصغر قليلاً لجعل التصميم متوازن */}
+  <span className="block text-white text-7xl md:text-4xl font-bold mb-4 drop-shadow-lg">
+    مرحباً بك في الوحدة الرابعة🚀
+  </span>
+
+  {/* السطر الثاني: العنوان الرئيسي الكبير */}
+   <h1 className="text-2xl md:text-[5rem] font-black leading-none mb-10"></h1>
+  <span className="block bg-clip-text text-transparent bg-linear-to-t from-orange-600 to-amber-400 drop-shadow-[0_15px_30px_rgba(234,88,12,0.4)]">
+    اكتشف أسرار تفتت الصخور في منصتنا الرقمية الأكثر تطوراً
+  </span>
+</h1>
+
+        {/* الأزرار المصممة مثل الصورة التي أرفقتها (Glow Cards) */}
+        <div className="flex flex-col sm:flex-row gap-8 justify-center mt-16">
+          
+          {/* زر ابدأ الرحلة */}
+          <Link href="/Unit4" className="relative group">
+            <div className="absolute -inset-1 bg-linear-to-r from-amber-500 to-[#6b3f2e] rounded-2xl blur opacity-70 group-hover:opacity-100 transition duration-300"></div>
+            <div className="relative px-10 py-6 bg-[#1a0f0a] rounded-2xl flex items-center gap-4 border border-white/10">
+              <div className="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center text-2xl shadow-[0_0_15px_rgba(245,158,11,0.6)]">🚀</div>
+              <div className="text-right">
+                <p className="text-white font-black text-xl">ابدأ رحلة التعلم</p>
+                <p className="text-amber-500/60 text-xs font-bold uppercase">Discover Geology</p>
+              </div>
+            </div>
+          </Link>
+
+          {/* زر من نحن */}
+          <Link href="/about" className="relative group">
+            <div className="absolute -inset-1 bg-linear-to-r from-slate-600 to-slate-900 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-300"></div>
+            <div className="relative px-12 py-6 bg-[#1a0f0a] rounded-2xl flex items-center gap-4 border border-white/10">
+              <div className="w-12 h-12 bg-slate-700 rounded-lg flex items-center justify-center text-2xl">🔍</div>
+              <div className="text-right">
+                <p className="text-white font-black text-xl">تعرف علينا</p>
+                <p className="text-slate-500 text-xs font-bold uppercase">Who We Are</p>
+              </div>
+            </div>
+          </Link>
+
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+      </section>
+    </main>
   );
 }
