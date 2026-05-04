@@ -15,7 +15,7 @@ export default function Lesson1() {
         
         {/* عنوان الدرس الرئيسي - تصميم عصري */}
         <header className="text-center bg-white/5 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/10 shadow-2xl">
-          <h1 className="text-4xl md:text-5xl font-black bg-clip-text text-transparent bg-gradient-to-r from-white via-orange-100 to-amber-200 mb-6">
+          <h1 className="text-4xl md:text-5xl font-black bg-clip-text text-transparent bg-linear-to-r from-white via-orange-100 to-amber-200 mb-6">
             الدرس الأول: مقدمة عن تفتيت الصخور
           </h1>
           <div className="inline-block px-6 py-2 bg-amber-500/10 border border-amber-500/20 rounded-full">
@@ -29,7 +29,7 @@ export default function Lesson1() {
             <span className="w-3 h-8 bg-linear-to-b from-orange-500 to-amber-600 rounded-full"></span>
             مقدمة عامة
           </h2>
-          <p className="text-xl leading-relaxed text-slate-300 bg-white/5 p-8 rounded-[2rem] border-r-8 border-orange-600 shadow-inner">
+          <p className="text-xl leading-relaxed text-slate-300 bg-white/5 p-8 rounded-4xl border-r-8 border-orange-600 shadow-inner">
             يتغير شكل سطح الأرض باستمرار بمرور الزمن نتيجة عوامل طبيعية مثل <span className="text-amber-400 font-bold">الماء والرياح وعوامل الطقس</span>، 
             حيث تؤدي هذه العوامل إلى تآكل الصخور وتفتيتها وتغيير شكل اليابسة (مثل تآكل الشواطئ وانهيار الطرق).
           </p>

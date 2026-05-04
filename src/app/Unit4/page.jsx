@@ -58,7 +58,7 @@ export default function Unit4Page() {
                 <div
                   style={{ backgroundColor: lesson.color }}
                   className="w-16 h-16 flex items-center justify-center rounded-3xl 
-                  text-black font-black text-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] mb-8 transition-all duration-500 group-hover:rotate-[15deg] group-hover:scale-110"
+                  text-black font-black text-2xl shadow-[0_0_20px_rgba(0,0,0,0.3)] mb-8 transition-all duration-500 group-hover:rotate-15 group-hover:scale-110"
                 >
                   {lesson.id}
                 </div>
