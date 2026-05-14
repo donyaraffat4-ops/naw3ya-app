@@ -16,7 +16,7 @@ export default function Unit4Page() {
     <div className="relative min-h-screen bg-[#0a0503] text-white overflow-hidden" dir="rtl">
       
       {/* 🌌 الخلفية السينمائية المتوهجة الثابتة (Glow FX) */}
-      <div className="fixed inset-0 z-0 bg-[#311c13] pointer-events-none">
+      <div className="fixed inset-0 z-0 bg-[#3c1c10] pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-125 h-125 bg-orange-900/15 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-1/4 right-1/4 w-125 h-125 bg-amber-900/10 rounded-full blur-[150px]"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#311c13]/5"></div>
@@ -32,7 +32,7 @@ export default function Unit4Page() {
         {/* التدرج اللوني فوق صورة الهيدر */}
         <div className="absolute inset-0 bg-linear-to-t from-[#0a0503] via-[#0a0503]/60 to-transparent flex flex-col items-center justify-end pb-16 px-4">
            <h1 className="text-white text-2xl md:text-6xl font-black text-center drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]">
-            الوحدة الرابعة: تفتت الصخور وحركتها
+            مفهوم تفتت الصخور وحركتها
           </h1>
         </div>
       </div>

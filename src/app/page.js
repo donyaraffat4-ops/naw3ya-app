@@ -6,7 +6,7 @@ export default function HomePage() {
     <main className="relative min-h-[80vh] flex flex-col items-center justify-center overflow-hidden">
       
       {/* 🌌 الخلفية السينمائية (مثل الصورة) */}
-      <div className="fixed inset-0 z-0 bg-[#3c2218]">
+      <div className="fixed inset-0 z-0 bg-[#3c1c10]">
         {/* توهج برتقالي كبير في النصف السفلي */}
         <div className="absolute bottom-[-10%] left-1/2 -translate-x-1/2 w-full max-w-5xl h-125 bg-orange-900/20 rounded-full blur-[120px]"></div>
         {/* إضاءة "نيون" ناعمة خلف النصوص */}
@@ -19,7 +19,7 @@ export default function HomePage() {
    <h1 className="text-7xl md:text-[3rem] font-black leading-none mb-10">
   {/* السطر الأول: نص الترحيب بحجم أصغر قليلاً لجعل التصميم متوازن */}
   <span className="block text-white text-7xl md:text-4xl font-bold mb-4 drop-shadow-lg">
-    مرحباً بك في الوحدة الرابعة🚀
+     مرحباً بك في مفهوم تفتت الصخور وحركتها🚀
   </span>
 
   {/* السطر الثاني: العنوان الرئيسي الكبير */}
